@@ -1,0 +1,4 @@
+camunda.bpm.client:
+  base-url: http://localhost:8080/engine-rest # the URL pointing to the Camunda Platform Runtime REST API
+  disable-backoff-strategy: true
+logging.level.org.camunda.bpm.client: INFO
