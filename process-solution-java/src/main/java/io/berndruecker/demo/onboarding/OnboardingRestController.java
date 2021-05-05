@@ -1,4 +1,4 @@
-package io.berndruecker.demo.covea;
+package io.berndruecker.demo.onboarding;
 
 import org.camunda.bpm.engine.ProcessEngine;
 import org.glassfish.jersey.internal.guava.Maps;

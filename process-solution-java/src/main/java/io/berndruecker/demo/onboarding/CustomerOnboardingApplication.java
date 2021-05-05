@@ -1,12 +1,12 @@
-package io.berndruecker.demo.covea;
+package io.berndruecker.demo.onboarding;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CoveaOnboardingApplication {
+public class CustomerOnboardingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CoveaOnboardingApplication.class, args);
+        SpringApplication.run(CustomerOnboardingApplication.class, args);
     }
 }

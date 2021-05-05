@@ -1,4 +1,4 @@
-package io.berndruecker.demo.covea;
+package io.berndruecker.demo.onboarding;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
