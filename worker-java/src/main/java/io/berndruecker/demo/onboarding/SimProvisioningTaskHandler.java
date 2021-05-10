@@ -1,4 +1,4 @@
-package io.berndruecker.demo.covea;
+package io.berndruecker.demo.onboarding;
 
 import org.camunda.bpm.client.spring.annotation.ExternalTaskSubscription;
 import org.camunda.bpm.client.task.ExternalTask;

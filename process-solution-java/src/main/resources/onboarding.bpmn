@@ -2,6 +2,11 @@
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0c05i60" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.7.0">
   <bpmn:process id="onboarding" name="Onboarding" isExecutable="true">
     <bpmn:startEvent id="Event_19l94it" name="New customer order received">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="customer" label="Customer" type="string" />
+        </camunda:formData>
+      </bpmn:extensionElements>
       <bpmn:outgoing>Flow_1xpifjz</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="Event_1fepwig" name="Customer order processed">

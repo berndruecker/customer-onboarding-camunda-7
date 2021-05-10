@@ -5,8 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-<!--    <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
--->
+    <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -35,7 +34,7 @@
       <version>2.3.0</version>
     </dependency>
   </dependencies>
-<!--
+
    <build>
     <plugins>
       <plugin>
@@ -53,7 +52,13 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>io.berndruecker.demo.onboarding.SimProvisioningApplication</mainClass>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
--->
 </project>

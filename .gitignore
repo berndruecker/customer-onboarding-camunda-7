@@ -1,3 +1,6 @@
 .idea
 target
 node_modules
+bin
+obj
+*.db
