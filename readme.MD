@@ -24,19 +24,19 @@ It contains:
 
 You can run this by
 
-`
+```
 cd process-solution-java
 mvn package exec:java
-`
+```
 
 Then there is an [external task worker](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) in Java to trigger sim provisioning in `worker-java`.
 
 Run it by
 
-`
+```
 cd worker-java
 mvn package exec:java
-`
+```
 
 The worker to register the sim in the network is in NodeJs, see next section.
 
@@ -46,11 +46,11 @@ One external task worker is in NodeJS to showcase technologies. You find it in `
 
 Run it by
 
-`
+```
 cd worker-nodejs
 npm update
 node index.js
-`
+```
 
 
 ## C-Sharp
@@ -64,10 +64,10 @@ But you might also just want to skip Java completly and start the C# application
 1. Open the process model in `onboarding-external-task-only.bpmn` with the [Camunda Modeler]() and deploy the model from there to your local Camunda engine
 1. Start the C# application:
 
-`
+```
 cd worker-csharp
 dotnet run
-`
+```
 
 # Play
 
