@@ -10,9 +10,9 @@ namespace CustomerOnboardingWorker.Controllers
     {
         [HttpGet] // Should be PUT but had trouble and too limited time to get it to work with DotNet 3
         [Route("/customer")]
-        public ActionResult PutCustomer([FromQuery]String customer)
+        public ActionResult PutCustomer([FromQuery]String name)
         {
-            System.Console.WriteLine("Starting onboarding process for '" + customer + "'" );
+            System.Console.WriteLine("Starting onboarding process for '" + name + "'" );
 
             var camunda = new CamundaEngineClient(new Uri("http://localhost:8080/engine-rest/engine/default/"), null, null);
 
@@ -24,7 +24,7 @@ namespace CustomerOnboardingWorker.Controllers
                 traceId,
                 new Dictionary<string, object>()
                 {
-                    {"customer", customer }
+                    {"customer", name }
                 });
 
             result.Add("traceId", traceId);
