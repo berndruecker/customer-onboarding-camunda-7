@@ -5,3 +5,6 @@ bin
 obj
 *.db
 *.iml
+.classpath
+.project
+.settings
